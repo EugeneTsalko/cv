@@ -4,15 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
   <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
   <link rel="stylesheet" href="./styles/style.css">
-  <title>Document</title>
+  <title>Eugene Tsalko - front-end developer</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">Header</header>
-    <main class="main">Main</main>
+
+    <header class="header">
+      <a href="/" class="logo-link">
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="logo" class="logo-img">
+          <div class="logo-text">
+              <p class="logo-title">Eugene Tsalko</p>
+              <!-- <p>Tsalko</p> -->
+              <p class="logo-subtitle">front-end developer</p>
+          </div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#portfolio" class="nav-item">Portfolio</a>
+        <a href="#contacts" class="nav-item">Contacts</a>
+      </nav>
+      <a href="/" class="download">Download CV</a>
+    </header>
+
+    <main class="main">
+      <section class="about" id="about">
+        <div class="about-description">
+        <h2 class="section-header">Welcome</h2>
+          <h1 class="about-header">I have creative <span class="green-text">Front-End</span> <br> <span class="green-text">Development</span> experience</h1>
+          <p class="about-text">I'm Eugene, a creative front-end developer and this is my awesome portfolio. I made it myself! Yes.</p>
+          <a href="#contacts" class="about-btn btn">Contact me</a>
+        </div>
+        <div class="about-photo">
+          <div class="photo-border"></div>
+          <div class="photo-background"></div>
+          <img src="./assets/me.svg" alt="my-photo" class="about-img">
+        </div>
+      </section>
+      <section class="skills" id="skills">SKILLS</section>
+      <section class="portfolio" id="portfolio">PORTFOLIO</section>
+      <section class="contacts" id="contacts">CONTACTS</section>
+
+    </main>
+
     <footer class="footer">Footer</footer>
+
   </div>
 </body>
 <script type="text/javascript" src="./script.js"></script>
