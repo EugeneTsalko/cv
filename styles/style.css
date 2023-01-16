@@ -149,7 +149,7 @@ section {
   margin-bottom: 10px;
 }
 
-.about {
+.about, .skills {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -172,7 +172,7 @@ section {
   color: var(--green-color);
 }
 
-.about-text {
+.about-text, .skills-text {
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
 }
@@ -214,6 +214,47 @@ section {
   position: absolute;
   left: 40px;
   top: 80px;
+}
+
+.skills {
+  padding-top: 188px;
+}
+
+.skills-header {
+  max-width: 400px;
+  width: 100%;
+}
+
+.skills-text {
+  max-width: 450px;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills-list-item {
+  /* border: 1px solid red; */
+  width: 135px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.skills-img {
+  display: block;
+  width: 100%;
 }
 
 .footer {
