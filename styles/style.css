@@ -7,6 +7,7 @@
   --red-color: #FF0000;
   --white-color: #FFFFFF;
   --peach-color: #FE8B75;
+  --gray-color: #92929D;
   --transition: ease-in-out 0.3s;
 }
 
@@ -149,7 +150,7 @@ section {
   margin-bottom: 10px;
 }
 
-.about, .skills {
+.about, .skills, .contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -275,8 +276,86 @@ h2 {
   border: 1px solid red;
 }
 
+.contacts {
+  padding-top: 180px;
+  flex-direction: column;
+}
+
+.contacts-text {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts-wrapper {
+  display: flex;
+  width: 100%;
+  /* gap: 50px; */
+  justify-content: space-between;
+}
+
+.contacts-list-item:first-child {
+  box-shadow: 0px 30px 116px -16px rgba(211, 211, 211, 0.2);
+}
+
+.contacts-list-item {
+  /* border: 1px solid red; */
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+}
+
+.contact-header {
+  color: var(--gray-color);
+}
+
+.contact {
+  font-weight: 500;
+}
+
+.contacts-mail {
+  max-width: 700px;
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-auto-rows: 100px; */
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* grid-template: 
+            "a a a" 40px
+            "b c c" 40px
+            "b c c" 40px / 1fr 1fr 1fr; */
+}
+
+.input {
+  border: 0.3px solid var(--gray-color);
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  /* height: 56px; */
+  /* width: 340px; */
+}
+
+.message {
+  /* background-color: #000000; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* width: 700px; */
+  width: 100%;
+}
+
 .footer {
-  border: solid 1px red;
-  /* padding: var(--padding); */
-  padding-left: 165px;
+  padding: 120px 165px 40px 165px;
+}
+
+.footer-wrapper {
+  border-top: 1px solid var(--gray-color);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
