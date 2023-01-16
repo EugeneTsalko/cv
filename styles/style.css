@@ -172,7 +172,7 @@ section {
   color: var(--green-color);
 }
 
-.about-text, .skills-text {
+.description {
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
 }
@@ -217,7 +217,7 @@ section {
 }
 
 .skills {
-  padding-top: 188px;
+  padding-top: 180px;
 }
 
 .skills-header {
@@ -255,6 +255,24 @@ h2 {
 .skills-img {
   display: block;
   width: 100%;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 180px;
+  padding-left: 165px;
+  /* padding-right: 165px; */
+}
+
+.portfolio-about {
+  max-width: 355px;
+  width: 100%;
+}
+
+.portfolio-slider {
+  border: 1px solid red;
 }
 
 .footer {
