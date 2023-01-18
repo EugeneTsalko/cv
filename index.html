@@ -5,29 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-  <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
   <link rel="stylesheet" href="./styles/style.css">
   <title>Eugene Tsalko - front-end developer</title>
 </head>
 <body>
+  <div class="overlay"></div>
   <div class="wrapper">
     <header class="header">
       <a href="/" class="logo-link">
         <div class="logo">
-          <!-- <img src="./assets/logo.svg" alt="logo" class="logo-img"> -->
+          <img src="./assets/logo.svg" alt="logo" class="logo-img">
           <div class="logo-text">
               <p class="logo-title">Eugene Tsalko</p>
               <p class="logo-subtitle">front-end developer</p>
           </div>
         </div>
       </a>
-      <nav class="nav">
-        <a href="#about" class="nav-item">About</a>
-        <a href="#skills" class="nav-item">Skills</a>
-        <a href="#portfolio" class="nav-item">Portfolio</a>
-        <a href="#contacts" class="nav-item">Contacts</a>
+      <nav class="header-nav">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+            <li><a href="#contacts" class="nav-item">Contacts</a></li>
+            <li><a href="https://www.dropbox.com/s/9uu39xlr28u3pzh/Eugene%20Tsalko%20Frontend%20CV.pdf?dl=1" class="nav-item green-border">Download CV</a></li>
+          </ul>
+        </div>
+        <div class="burger" id="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </nav> 
-      <a href="/" class="download">Download CV</a>
     </header>
 
     <main class="main">
@@ -89,12 +98,12 @@
         </ul>
       </section>
 
-      <!-- <section class="portfolio" id="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolio-about">
           <h3 class="section-header">Portfolio</h3>
           <h2 class="portfolio-header">My Latest Creative <span class="green-text">Projects</span></h2>
           <p class="portfolio-text description">I have selected and mentioned here some of my latest projects to share with you.</p>
-          <a href="#contacts" class="portfolio-btn btn">Show more</a>
+          <a href="https://github.com/EugeneTsalko" target="_blank" class="portfolio-btn btn">Show more</a>
         </div>
 
         <div class="portfolio-slider">
@@ -102,14 +111,14 @@
           <input type="radio" name="slider" id="item-2">
           <input type="radio" name="slider" id="item-3">
           <div class="cards">
-            <label class="card" for="item-1" id="song-1">
-              <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+            <label class="card" for="item-1" id="slide-1">
+              <img src="./assets/photographers-portfolio.png" alt="Photographers portfolio">
             </label>
-            <label class="card" for="item-2" id="song-2">
-              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+            <label class="card" for="item-2" id="slide-2">
+              <img src="./assets/shelter.png" alt="Pet shelter">
             </label>
-            <label class="card" for="item-3" id="song-3">
-              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+            <label class="card" for="item-3" id="slide-3">
+              <img src="./assets/kanban.png" alt="Kanban manager">
             </label>
           </div>
           <div class="slider-btns">
@@ -119,7 +128,7 @@
           </div>
         </div>  
 
-      </section> -->
+      </section>
 
       <section class="contacts" id="contacts">
         <h3 class="section-header">Contacts</h3>
