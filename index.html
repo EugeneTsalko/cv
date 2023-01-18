@@ -11,14 +11,12 @@
 </head>
 <body>
   <div class="wrapper">
-
     <header class="header">
       <a href="/" class="logo-link">
         <div class="logo">
-          <img src="./assets/logo.svg" alt="logo" class="logo-img">
+          <!-- <img src="./assets/logo.svg" alt="logo" class="logo-img"> -->
           <div class="logo-text">
               <p class="logo-title">Eugene Tsalko</p>
-              <!-- <p>Tsalko</p> -->
               <p class="logo-subtitle">front-end developer</p>
           </div>
         </div>
@@ -28,7 +26,7 @@
         <a href="#skills" class="nav-item">Skills</a>
         <a href="#portfolio" class="nav-item">Portfolio</a>
         <a href="#contacts" class="nav-item">Contacts</a>
-      </nav>
+      </nav> 
       <a href="/" class="download">Download CV</a>
     </header>
 
@@ -91,17 +89,38 @@
         </ul>
       </section>
 
-      <section class="portfolio" id="portfolio">
+      <!-- <section class="portfolio" id="portfolio">
         <div class="portfolio-about">
           <h3 class="section-header">Portfolio</h3>
           <h2 class="portfolio-header">My Latest Creative <span class="green-text">Projects</span></h2>
           <p class="portfolio-text description">I have selected and mentioned here some of my latest projects to share with you.</p>
           <a href="#contacts" class="portfolio-btn btn">Show more</a>
         </div>
+
         <div class="portfolio-slider">
-          SLIDER
-        </div>
-      </section>
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+            </label>
+          </div>
+          <div class="slider-btns">
+            <label class="slider-btn" for="item-1"></label>
+            <label class="slider-btn" for="item-2"></label>
+            <label class="slider-btn" for="item-3"></label>
+          </div>
+        </div>  
+
+      </section> -->
+
       <section class="contacts" id="contacts">
         <h3 class="section-header">Contacts</h3>
         <h2 class="contacts-header">Let's Discuss Your <span class="green-text">Project</span></h2>
@@ -136,6 +155,7 @@
             <input type="text" placeholder="Message" class="input message">
           </div>
         </div>
+        <button class="contacts-btn btn">Send message</button>
       </section>
 
     </main>
