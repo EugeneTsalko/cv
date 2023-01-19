@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/png/favicon.png">
+  <link rel="stylesheet" href="./style.css">
   <title>Eugene Tsalko - front-end developer</title>
 </head>
 <body>
@@ -14,7 +14,6 @@
     <header class="header">
       <a href="/" class="logo-link">
         <div class="logo">
-          <img src="./assets/logo.svg" alt="logo" class="logo-img">
           <div class="logo-text">
               <p class="logo-title">Eugene Tsalko</p>
               <p class="logo-subtitle">front-end developer</p>
@@ -48,10 +47,16 @@
           <p class="about-text description">I'm Eugene Tsalko, a 27 y.o. creative front-end developer and this is my awesome portfolio. I made it myself! Yes.</p>
           <a href="#contacts" class="about-btn btn">Contact me</a>
         </div>
-        <div class="about-photo">
-          <div class="photo-border"></div>
-          <div class="photo-background"></div>
-          <img src="./assets/me.svg" alt="my-photo" class="about-img">
+        <div class="about-photo-container">
+          <div class="about-photo">
+            <div class="photo-border"></div>
+            <div class="photo-background"></div>
+            <img src="./assets/png/my-photo.png" alt="my-photo" class="about-img">
+          </div>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/eugenetsalko/" class="socials-link linkedin" target="_blank"><img class="socials-link-img" src="./assets/svg/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/EugeneTsalko" class="socials-link" target="_blank"><img class="socials-link-img" src="./assets/svg/github.svg" alt="github"></a>
+          </div>
         </div>
       </section>
 
@@ -59,40 +64,40 @@
         <div class="skills-about">
           <h3 class="section-header">My Skills</h3>
           <h2 class="skills-header">Why Hire Me For Your Next <span class="green-text">Project?</span></h2>
-          <p class="skills-text description">Man of the year 2006 by TIME magazine. Excellent team player. Eager to create high quality products. My passion is solving problems through front-end development.</p>
+          <p class="skills-text description">Man of the year 2006 by TIME magazine. Bachelor of economics. Excellent team player. Eager to create high quality products. My passion is solving problems through front-end development.</p>
           <a href="#contacts" class="skills-btn btn">Hire me</a>
         </div>
         <ul class="skills-list">
           <li class="skills-list-item">
-            <img src="./assets/react.svg" alt="react" class="skills-img">
+            <img src="./assets/svg/react.svg" alt="react" class="skills-img">
             <h4>REACT</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/redux.svg" alt="redux" class="skills-img">
+            <img src="./assets/svg/redux.svg" alt="redux" class="skills-img">
             <h4>REDUX</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/ts.svg" alt="ts" class="skills-img">
+            <img src="./assets/svg/ts.svg" alt="ts" class="skills-img">
             <h4>TYPESCRIPT</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/sass.svg" alt="sass" class="skills-img">
+            <img src="./assets/svg/sass.svg" alt="sass" class="skills-img">
             <h4>SASS</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/js.svg" alt="js" class="skills-img">
+            <img src="./assets/svg/js.svg" alt="js" class="skills-img">
             <h4>JAVASCRIPT</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/html.svg" alt="html" class="skills-img">
+            <img src="./assets/svg/html.svg" alt="html" class="skills-img">
             <h4>HTML</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/css.svg" alt="css" class="skills-img">
+            <img src="./assets/svg/css.svg" alt="css" class="skills-img">
             <h4>CSS</h4>
           </li>
           <li class="skills-list-item">
-            <img src="./assets/git.svg" alt="git" class="skills-img">
+            <img src="./assets/svg/git.svg" alt="git" class="skills-img">
             <h4>GIT</h4>
           </li>
         </ul>
@@ -112,13 +117,13 @@
           <input type="radio" name="slider" id="item-3">
           <div class="cards">
             <label class="card" for="item-1" id="slide-1">
-              <img src="./assets/photographers-portfolio.png" alt="Photographers portfolio">
+              <img src="./assets/png/photographers-portfolio.png" alt="Photographers portfolio">
             </label>
             <label class="card" for="item-2" id="slide-2">
-              <img src="./assets/shelter.png" alt="Pet shelter">
+              <img src="./assets/png/shelter.png" alt="Pet shelter">
             </label>
             <label class="card" for="item-3" id="slide-3">
-              <img src="./assets/kanban.png" alt="Kanban manager">
+              <img src="./assets/png/kanban.png" alt="Kanban manager">
             </label>
           </div>
           <div class="slider-btns">
@@ -127,7 +132,6 @@
             <label class="slider-btn" for="item-3"></label>
           </div>
         </div>  
-
       </section>
 
       <section class="contacts" id="contacts">
@@ -137,21 +141,21 @@
         <div class="contacts-wrapper">
             <ul class="contacts-list">
               <li class="contacts-list-item">
-                <img src="./assets/phone.svg" alt="phone">
+                <img src="./assets/svg/phone.svg" alt="phone">
                 <div class="contact-info">
                   <p class="contact-header">Call me</p>
                   <p class="contact">+375-44-729-66-52</p>
                 </div>
               </li>
               <li class="contacts-list-item">
-                <img src="./assets/email.svg" alt="mail">
+                <img src="./assets/svg/email.svg" alt="mail">
                 <div class="contact-info">
                   <p class="contact-header">Email me</p>
                   <p class="contact">tefworkmail@gmail.com</p>
                 </div>
               </li>
               <li class="contacts-list-item">
-                <img src="./assets/location.svg" alt="location">
+                <img src="./assets/svg/location.svg" alt="location">
                 <div class="contact-info">
                   <p class="contact-header">Address</p>
                   <p class="contact">Belarus, Minsk</p>
@@ -171,9 +175,18 @@
 
     <footer class="footer">
       <div class="footer-wrapper">
-        <span>@ 2022. All Rights Reserved</span>
+        <span>2023</span>
         <span>Made by Eugene Tsalko</span>
-        <div class="socials">Socials</div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/eugenetsalko/" class="socials-link" target="_blank"><img class="socials-link-img" src="./assets/svg/linkedin.svg" alt="LinkedIn"></a>
+            </li>
+            <li>
+              <a href="https://github.com/EugeneTsalko" class="socials-link" target="_blank"><img class="socials-link-img" src="./assets/svg/github.svg" alt="github"></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
